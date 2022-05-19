@@ -1,7 +1,7 @@
 # MPI-Multithread-Framework
 3 sequential algorithm (simplex, game-of-life and heatmap) were sped up using using MPI Framework
 
-Full specification of those algorithms and constraints about their speeding up can be seen [here](https://github.com/mdodovic/OpenMP-Multithread-Framework/blob/main/problems_description.pdf).
+Full specification of those algorithms and constraints about their speeding up can be seen [here](https://github.com/mdodovic/MPI-Multithread-Framework/blob/main/problems_description.pdf).
 
 ## [task1](https://github.com/mdodovic/OpenMP-Multithread-Framework/tree/main/task1_simplex)
 
