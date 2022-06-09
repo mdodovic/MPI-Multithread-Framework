@@ -11,10 +11,10 @@ Sequential code is modified and then both basic and revised codes are sped up by
 
 Sequential code is sped up by dividing the complete work into processes. Some of the data (the first and the last row of the processes' part of the matrix) are exchanged between processes with adjacent rank. 
 
-## [task3](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task3_hotspot/data)
+## [task3](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task3_hotspot)
 
 Sequential code is sped up by dividing the complete work into processes. Some of the data (the first and the last row of the processes' part of the matrix) are exchanged between processes with adjacent rank. 
 
-## [task4](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task4_hotspot/data)
+## [task4](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task4_hotspot)
 
 Sequential code is sped up using the _Manager-Worker_ technique. One (rank = 0) process was declared as master and all of the others processes requested the job to be done. After the job was done, the result was sent to the master.  
