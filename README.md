@@ -3,22 +3,18 @@
 
 Full specification of those algorithms and constraints about their speeding up can be seen [here](https://github.com/mdodovic/MPI-Multithread-Framework/blob/main/problems_description.pdf).
 
-## [task1](https://github.com/mdodovic/OpenMP-Multithread-Framework/tree/main/task1_simplex)
+## [task1](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task1_simplex)
 
-Sequential code is modified and then both basic and modified codes are sped up using **manual scheduling** of all _unit-of-work_.
+Sequential code is modified and then both basic and revised codes are sped up by dividing all of the _unit_of_works_ among the processes.
 
-## [task2](https://github.com/mdodovic/OpenMP-Multithread-Framework/tree/main/task2_simplex)
+## [task2](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task2_gameoflife)
 
-Sequential code is modified and then both basic and modified codes are sped up using the **working sharing directive _for_**. This working sharing directive can divide the total amount of work using different techniques (_static_, _dynamic_, _guided_) with variable _unit-of-work_ sizes.
+Sequential code is sped up by dividing the complete work into processes. Some of the data (the first and the last row of the processes' part of the matrix) are exchanged between processes with adjacent rank. 
 
-## [task3](https://github.com/mdodovic/OpenMP-Multithread-Framework/tree/main/task3_gameoflife)
+## [task3](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task3_hotspot)
 
-Sequential code is sped up using the **working sharing directive _for_** with the _static_ technique of dividing the total amount of work into _unit-of-work_ with size 1.
+Sequential code is sped up by dividing the complete work into processes. Some of the data (the first and the last row of the processes' part of the matrix) are exchanged between processes with adjacent rank. 
 
-## [task4](https://github.com/mdodovic/OpenMP-Multithread-Framework/tree/main/task4_gameoflife)
+## [task4](https://github.com/mdodovic/MPI-Multithread-Framework/tree/main/task4_hotspot)
 
-Sequential code is sped up using the **tasks**. Every task gets the exact same number of _unit-of-work_.
-
-## [task5](https://github.com/mdodovic/OpenMP-Multithread-Framework/tree/main/task5_hotspot)
-
-Sequential code is sped up using both **tasks** and **manual scheduling**.
+Sequential code is sped up using the _Manager-Worker_ technique. One (rank = 0) process was declared as master and all of the others processes requested the job to be done. After the job was done, the result was sent to the master.  
